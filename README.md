@@ -1,5 +1,4 @@
 # EmilyBudden
-Emily Budden Portfolio Website
+Portfolio Website
 
-
-Just a small website testing out some web stuff.
+https://wallyflops.github.io/EmilyBudden/
