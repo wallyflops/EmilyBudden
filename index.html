@@ -18,7 +18,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+	<link rel="shortcut icon" href="http://faviconist.com/icons/b8cd271760ae9d6bf76c9418c96a9004/favicon.ico" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,7 +47,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
+                    
+					<li class="hidden"> <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
@@ -241,7 +242,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>Flat 7, Kingston Court<br>82 Maple Road<br>Surbiton, KT6 4AL</p>
+                        <p>82 Maple Road<br>Surbiton, KT6 4AL</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -303,7 +304,55 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+													
+							<a href="#" id="pop">
+							<img id="imageresource" src="img/portfolio/cabin.png" style="width: 400px; height: 264px;">
+
+							</a>
+<!-- this is code trying to open a modal showcasing the large imagine, from within another modal -->
+<!-- it appears that when you close the modal, BOTH modals are impacting. TODO -->
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+							</div>
+							
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -529,6 +578,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+	    <!-- Popping js script -->
+    <script src="js/images.js"></script>
 
 </body>
 
