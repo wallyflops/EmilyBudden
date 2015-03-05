@@ -139,7 +139,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 10px 0; /*10px default*/
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
